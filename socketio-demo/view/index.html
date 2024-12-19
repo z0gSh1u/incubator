@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chet-rum</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="./js/socket.io.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left">
+      <p class="title">chet-rum <i>A Chatroom System Using WebSocket</i></p>
+      <div class="msgDisplay">
+        <ul id="msgList">
+        </ul>
+      </div>
+      <div class="msgSend">
+        <input type="text" id="msgInput">
+        <button id="msgSendBtn">Send</button>
+      </div>
+    </div>
+    <div class="right">
+      <p class="title">User List</p>
+      <ul id="userList">
+      </ul>
+    </div>
+  </div>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
