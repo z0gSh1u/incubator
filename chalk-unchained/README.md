@@ -1,41 +1,34 @@
-# chalk-better
+# chalk-unchained
+
+> [!NOTE]
+>
+> This project was once published to NPM with name `chalk-better` in around 2020, but now removed.
 
 ```javascript
-// w/o chalk-better
+// w/o
 console.log(chalk.bgBlue.white.bold('Hello, world!'))
 
-// with chalk-better
-chalkBetter("Hello, world!", 'bgBlue white bold')
+// with
+chalkUnchained('Hello, world!', 'bgBlue white bold')
 ```
 
 ## Install
 
-### via npm
-
 ```shell
-$ npm install chalk-better --save
+$ npm install chalk-unchained --save
 ```
-
-### via source
-
-```shell
-$ git clone https://github.com/z0gSh1u/chalk-better.git
-```
-
-And then copy `app.js` and `app.d.ts` to your project as you wish.
 
 ## Usage
 
 ```javascript
-const { chalkBetter } = require('chalk-better')
-chalkBetter('your messgae', 'space seperated styles')
+const { chalkUnchained } = require('chalk-unchained')
+chalkUnchained('your messgae', 'space seperated styles')
+
+// Available styles include
+// - bold, italic, underline, inverse
+// - black, red, green, yellow, blue, magenta, cyan, white, gray
+// - bgBlack, bgRed, bgYello, bgBlue,bgMagenta, bgCyan, bgWhite
 ```
-
-**Available styles:**
-
-- bold, italic, underline, inverse
-- black, red, green, yellow, blue, magenta, cyan, white, gray
-- bgBlack, bgRed, bgYello, bgBlue,bgMagenta, bgCyan, bgWhite
 
 ## License
 

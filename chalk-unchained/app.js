@@ -1,11 +1,12 @@
 /**
- * chalk-better v1.0.0
- * https://github.com/z0gSh1u/chalk-better
+ * chalk-unchained v1.0.0
+ *
+ * https://github.com/z0gSh1u/miscellanea
  */
 
 const chalk = require('chalk')
 
-module.exports.chalkBetter = function (message, style) {
+module.exports.chalkUnchained = module.exports.chalkBetter = function (message, style) {
   try {
     // wtf is this string!
     eval(

@@ -1,18 +1,18 @@
 {
-  "name": "chalk-better",
+  "name": "chalk-unchained",
   "version": "1.0.0",
-  "description": "Better style cascading for chalk.",
+  "description": "Unchained style cascading for chalk.",
   "main": "app.js",
   "scripts": {
     "test": "jest"
   },
   "author": "z0gSh1u",
   "repository": {
-    "url": "https://github.com/z0gSh1u/chalk-better"
+    "url": "https://github.com/z0gSh1u/miscellanea"
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.2"
   },
   "devDependencies": {
     "jest": "^26.6.3"
