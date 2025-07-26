@@ -1,0 +1,90 @@
+{
+  "name": "elecbrow",
+  "version": "1.0.0",
+  "description": "Multi-tab browser built with Electron and React",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "pnpm run build:dev && electron ./dist/index.js",
+    "build": "rimraf dist && pnpm run build:types && webpack --mode=production",
+    "build:dev": "rimraf dist && pnpm run build:types && webpack --mode=development",
+    "build:types": "node scripts/generate-types.js",
+    "build:watch": "concurrently \"tsc -p tsconfig.declarations.json --watch\" \"webpack --mode=development --watch\"",
+    "dev": "concurrently \"pnpm run build:watch\" \"wait-on dist/index.js && electron ./dist/index.js\"",
+    "package": "pnpm run build && electron-builder build",
+    "prepublishOnly": "pnpm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "typecheck": "tsc --noEmit",
+    "example": "electron examples/simple.js"
+  },
+  "keywords": [
+    "electron",
+    "browser",
+    "tabs",
+    "react",
+    "multi-tab"
+  ],
+  "author": "z0gSh1u",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z0gSh1u/elecbrow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/z0gSh1u/elecbrow/issues"
+  },
+  "homepage": "https://github.com/z0gSh1u/elecbrow",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "electron": "34",
+    "electron-builder": "^26.0.12",
+    "html-webpack-plugin": "^5.6.3",
+    "rimraf": "^5.0.10",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.5.0",
+    "wait-on": "^8.0.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "react": "18",
+    "react-dom": "18",
+    "react-icons": "^5.5.0"
+  },
+  "peerDependencies": {
+    "electron": ">=30.0.0"
+  },
+  "build": {
+    "appId": "com.elecbrow.app",
+    "productName": "ElecBrow",
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

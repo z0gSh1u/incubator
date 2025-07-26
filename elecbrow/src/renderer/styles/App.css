@@ -1,0 +1,33 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+
+.browser-controls {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f3f4;
+  border-bottom: 1px solid #dadce0;
+  z-index: 10;
+  position: relative;
+}
+
+.browser-view {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 90px); /* Adjust based on the height of browser-controls */
+}
+
+/* Make sure BrowserView contents don't overlap our NewTabPage */
+.new-tab-active .browser-view {
+  z-index: 1;
+}
+
+/* Make sure browser controls stay on top */
+.new-tab-active .browser-controls {
+  z-index: 20;
+}

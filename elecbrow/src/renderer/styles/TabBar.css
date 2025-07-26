@@ -1,0 +1,112 @@
+.tab-bar {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  background-color: #dee1e6;
+  padding: 0 8px;
+}
+
+.tabs {
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+}
+
+.tabs::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  max-width: 240px;
+  height: 32px;
+  margin-right: 1px;
+  padding: 0 8px 0 16px;
+  background-color: #f1f3f4;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  overflow: hidden;
+  position: relative;
+}
+
+.tab.active {
+  background-color: white;
+}
+
+/* Drag and drop styling */
+.tab.dragging {
+  opacity: 0.7;
+  z-index: 100;
+}
+
+.tab.drag-left::before,
+.tab.drag-right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #1a73e8;
+  z-index: 10;
+}
+
+.tab.drag-left::before {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.tab.drag-right::after {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.tab-title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.tab-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  color: #5f6368;
+}
+
+.tab-close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.new-tab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.new-tab-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

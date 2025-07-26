@@ -1,0 +1,29 @@
+# Source files
+src/
+.prettierrc
+.eslintrc
+tsconfig.json
+
+# Build tools
+webpack.config.js
+.github/
+.vscode/
+.idea/
+
+# Development files
+node_modules/
+*.log
+*.tgz
+.DS_Store
+.env
+
+# Examples (keep in git but not in npm)
+examples/
+
+# Tests
+test/
+coverage/
+.nyc_output/
+
+# Only include the dist directory
+!dist/ 
