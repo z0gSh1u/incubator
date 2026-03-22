@@ -1,0 +1,28 @@
+/* 02-abort-request 示例样式 */
+
+.abortedLabel {
+  margin-left: 8px;
+  color: #f59e0b;
+  font-size: 12px;
+}
+
+.codeBlock {
+  margin-top: 20px;
+  padding: 16px;
+  background: #171717;
+  border-radius: 8px;
+}
+
+.codeBlock h4 {
+  margin-bottom: 8px;
+  color: #f8fafc;
+}
+
+.codeBlock pre {
+  background: #0a0a0a;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  overflow: auto;
+  color: #e2e8f0;
+}

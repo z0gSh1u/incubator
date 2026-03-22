@@ -1,0 +1,42 @@
+/* 03-auto-scroll 示例样式 */
+
+.messagesWrapper {
+  position: relative;
+}
+
+.scrollToBottomBtn {
+  position: sticky;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3b82f6;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.codeBlock {
+  margin-top: 20px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.codeBlock h4 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.codeBlock pre {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  overflow: auto;
+  color: #e2e8f0;
+}

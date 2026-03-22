@@ -1,0 +1,155 @@
+/* 05-prompt-template 示例样式 */
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.section h4 {
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.templateButton {
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.templateButton.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.templateButton:not(.active) {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.templateTextarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #1e293b;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.variableForm {
+  margin-bottom: 12px;
+}
+
+.variableLabel {
+  display: block;
+  margin-bottom: 4px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.variableInput {
+  width: 100%;
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.variableTextarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #1e293b;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.emptyText {
+  color: #64748b;
+}
+
+.previewBox {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow: auto;
+  color: #e2e8f0;
+}
+
+.executeButton {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.executeButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.resultBox {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  min-height: 150px;
+  max-height: 300px;
+  overflow: auto;
+  color: #334155;
+}
+
+.resultPlaceholder {
+  color: #94a3b8;
+}
+
+.codeSection {
+  margin-top: 20px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.codeSection h4 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.codeSection pre {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #e2e8f0;
+  overflow: auto;
+}

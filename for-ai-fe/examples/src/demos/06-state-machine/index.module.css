@@ -1,0 +1,105 @@
+/* 06-state-machine 示例样式 */
+
+.statusBar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.statusBar > div {
+  color: #334155;
+}
+
+.statusBadge {
+  margin-left: 8px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+}
+
+.statusBadge.idle {
+  background: #22c55e;
+}
+
+.statusBadge.generating {
+  background: #3b82f6;
+}
+
+.statusBadge.paused {
+  background: #f59e0b;
+}
+
+.messageRole {
+  display: flex;
+  justify-content: space-between;
+}
+
+.regenerateCount {
+  margin-left: 8px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.messageStatus {
+  font-size: 11px;
+}
+
+.messageStatus.completed {
+  color: #22c55e;
+}
+
+.messageStatus.aborted {
+  color: #f59e0b;
+}
+
+.messageStatus.error {
+  color: #ef4444;
+}
+
+.messageStatus.pending {
+  color: #888;
+}
+
+.regenerateButton {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.regenerateButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.stateMachineDiagram {
+  margin-top: 20px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.stateMachineDiagram h4 {
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.stateMachineDiagram pre {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  color: #e2e8f0;
+  overflow: auto;
+}

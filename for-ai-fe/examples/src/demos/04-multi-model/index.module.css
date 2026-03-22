@@ -1,0 +1,170 @@
+/* 04-multi-model 示例样式 */
+
+.configSection {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #1e293b;
+  font-size: 15px;
+}
+
+.radioGroup {
+  margin-bottom: 16px;
+}
+
+.radioGroup label:first-of-type {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.radioOptions {
+  display: flex;
+  gap: 16px;
+}
+
+.radioOptions label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.runButton {
+  background: #3b82f6;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.runButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.helpText {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.resultCard {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.resultCard.success {
+  border: 1px solid #22c55e;
+}
+
+.resultCard.error {
+  border: 1px solid #ef4444;
+}
+
+.resultCard.pending {
+  border: 1px solid #404040;
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.resultHeader span:first-child {
+  font-weight: bold;
+}
+
+.resultStatus {
+  font-size: 12px;
+}
+
+.resultStatus.success {
+  color: #22c55e;
+}
+
+.resultStatus.error {
+  color: #ef4444;
+}
+
+.resultStatus.pending {
+  color: #888;
+}
+
+.resultContent {
+  font-size: 14px;
+  color: #334155;
+  min-height: 60px;
+}
+
+.resultContent.error {
+  color: #ef4444;
+}
+
+.codeSection {
+  margin-top: 20px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.codeSection h4 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.codeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.codeGrid h5 {
+  margin-bottom: 8px;
+}
+
+.codeGrid h5.error {
+  color: #dc2626;
+}
+
+.codeGrid h5.success {
+  color: #16a34a;
+}
+
+.codeGrid pre {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #e2e8f0;
+  overflow: auto;
+}
