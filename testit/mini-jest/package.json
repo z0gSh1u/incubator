@@ -1,0 +1,10 @@
+{
+  "name": "mini-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mini-jest.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC"
+}

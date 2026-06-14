@@ -1,0 +1,7 @@
+[project]
+name = "github-stars-skills"
+version = "0.1.0"
+requires-python = ">=3.7"
+dependencies = [
+    "PyGithub>=1.59.0",
+]

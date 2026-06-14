@@ -1,0 +1,10 @@
+{
+  "name": "weiweibo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+  },
+  "author": "Xu Zhuo, Yuming Gao, Hantang Shen",
+  "license": "UNLICENSED"
+}
