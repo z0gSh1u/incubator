@@ -1,0 +1,3 @@
+[submodule "yagmail-official"]
+	path = yagmail-official
+	url = git@github.com:kootenpv/yagmail.git

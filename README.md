@@ -10,6 +10,7 @@ This is the collection of some small repositories or code snippets.
 | [minigrep](./minigrep)                             | `grep`-like tool written in Rust                 |
 | [naivefs](./naivefs)                               | A simple disk file system for Linux (incomplete) |
 | [ortho-matching-pursuit](./ortho-matching-pursuit) | Python implantation of OMP                       |
+| [sa-analysis](./sa-analysis)                       | Software architecture analysis course project    |
 | [socketio-demo](./socketio-demo)                   | Demo of socket.io usage                          |
 | [starbacks](./starbacks)                           | Semantic search skills for GitHub starred repos  |
 | [testit](./testit)                                 | Software testing course project                  |
