@@ -3,6 +3,7 @@ This is the collection of some small repositories or code snippets.
 | Project                                            | Content                                          |
 | -------------------------------------------------- | ------------------------------------------------ |
 | [chalk-unchained](./chalk-unchained)               | Unchained-style chalk                            |
+| [dijkstra-manyjs](./dijkstra-manyjs)               | Dijkstra benchmark in different JavaScript ways  |
 | [for-ai-fe](./for-ai-fe)                           | Web frontend capabilities for AI era             |
 | [hmos-firstbite](./hmos-firstbite)                 | First bite of Harmony OS app development         |
 | [how-to-cpp-8e](./how-to-cpp-8e)                   | Part of solutions to C++ How to Program 8/E      |
